@@ -16,6 +16,14 @@ install:
   - pip install codacy-coverage
 script:
   - cd decide
+  - cp local_settings.py travis_local_settings.py
   - coverage run --branch --source=. ./manage.py test --keepdb --with-xunit
   - coverage xml
   - python-codacy-coverage -r coverage.xml
+deploy:
+  provider: heroku
+  app: decidefraalepalrepository
+  strategy: git
+  api_key: $HEROKU_AUTH_TOKEN
+  on:
+    branch: master
