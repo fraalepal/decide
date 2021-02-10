@@ -70,7 +70,7 @@ MODULES = [
     'voting',
 ]
 
-BASEURL = 'https://decidefraalepalrepository.herokuapp.com'
+BASEURL = 'https://fraalepal-pre.herokuapp.com'
 
 APIS = {}
 
