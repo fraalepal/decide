@@ -21,10 +21,17 @@ install:
 script:
 - cd decide
 deploy:
-  provider: heroku
-  app: decidefraalepalrepository
-  strategy: git
-  on:
-    branch: master
-  api_key:
-    secure: L+dsWucRjVUe80zrT+zkuoekdk48Y4MUKEMo9jy0t6QSCE5NQgg0URdGyMCLGUfJzqvjqW8XmAh9A7eg71v8XyDBUzar8u52SuWGFhClMyU8yVWovGkHpwBU09lQ/5MhFhIb1AiuvHGj1mZhA/HqlP78oF3PpAAYbDlh80WH4vbPeYQQf2jVqm/BiYFcJNfL154jKIYh4JN7TmyJOC6hDPyD+0sXqUTWs+rNbA6UZlY5z2Mk8Q2E0BRXOAgiZ7cm2c9KsxHTwn/qy5h9Hvs/dU7mi+lDjp/ekjbuv2+xX8oS4ZjUUsgGznxUJTRvFAfad/Me7T4k3vZN1/XwRyeFEOrilWse18A7PRkNAJeLWNoCcspoXQ0Q9Ep2K4O7UE7C2mL3b6riaQXKBtUPRB0Aa6cTTyUKSXsFNc/uBf9bjr7j9o5gGa+Eb69kHj0noyasN5/ow85WVt/BHej+lwcNoABk80bXQv1vbwzgoVyz4a5r2Kd9fWu3wUgE/6cOvKl4K0ZiJ5fFeNAASxmlr0KSX11YaBAoTd6hEknbrXlvKpiQobA45Z65lOky6WMW2fPhiBBMuHcQVdbQn+ZARq8XbORuWt43+JDjcJyUeRkRtmvZbbGpWdLiYOtln+ypSGNKIHVcoyzGvrr3zfV+KDe2c33BnhLcKCZpL53YQzZ3swY=
+  - provider: heroku
+    app: decidefraalepalrepository
+    strategy: git
+    on:
+      branch: master
+    api_key:
+      secure: L+dsWucRjVUe80zrT+zkuoekdk48Y4MUKEMo9jy0t6QSCE5NQgg0URdGyMCLGUfJzqvjqW8XmAh9A7eg71v8XyDBUzar8u52SuWGFhClMyU8yVWovGkHpwBU09lQ/5MhFhIb1AiuvHGj1mZhA/HqlP78oF3PpAAYbDlh80WH4vbPeYQQf2jVqm/BiYFcJNfL154jKIYh4JN7TmyJOC6hDPyD+0sXqUTWs+rNbA6UZlY5z2Mk8Q2E0BRXOAgiZ7cm2c9KsxHTwn/qy5h9Hvs/dU7mi+lDjp/ekjbuv2+xX8oS4ZjUUsgGznxUJTRvFAfad/Me7T4k3vZN1/XwRyeFEOrilWse18A7PRkNAJeLWNoCcspoXQ0Q9Ep2K4O7UE7C2mL3b6riaQXKBtUPRB0Aa6cTTyUKSXsFNc/uBf9bjr7j9o5gGa+Eb69kHj0noyasN5/ow85WVt/BHej+lwcNoABk80bXQv1vbwzgoVyz4a5r2Kd9fWu3wUgE/6cOvKl4K0ZiJ5fFeNAASxmlr0KSX11YaBAoTd6hEknbrXlvKpiQobA45Z65lOky6WMW2fPhiBBMuHcQVdbQn+ZARq8XbORuWt43+JDjcJyUeRkRtmvZbbGpWdLiYOtln+ypSGNKIHVcoyzGvrr3zfV+KDe2c33BnhLcKCZpL53YQzZ3swY=
+  - provider: heroku
+    app: fraalepal-pre
+    strategy: git
+    api_key:
+      secure: L+dsWucRjVUe80zrT+zkuoekdk48Y4MUKEMo9jy0t6QSCE5NQgg0URdGyMCLGUfJzqvjqW8XmAh9A7eg71v8XyDBUzar8u52SuWGFhClMyU8yVWovGkHpwBU09lQ/5Mh>
+    on:
+      branch: rama_despliegue_experimental  
